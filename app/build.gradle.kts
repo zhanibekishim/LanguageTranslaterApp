@@ -34,10 +34,17 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
+    implementation ("com.google.mlkit:translate:17.0.3")
+    implementation ("com.google.firebase:firebase-core:15.0.2")
+    implementation ("com.google.firebase:firebase-ml-natural-language:22.0.0")
+    implementation ("com.google.firebase:firebase-ml-natural-language-translate-model:20.0.8")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

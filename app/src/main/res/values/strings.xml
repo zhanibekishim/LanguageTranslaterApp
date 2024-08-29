@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Language Translater App</string>
+    <string name="language_translator">Language Translator</string>
+    <string name="or">OR</string>
+    <string name="say_someting">Say someting</string>
+    <string name="translate">Translate</string>
 </resources>
