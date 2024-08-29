@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("com.google.gms.google-services") version "4.4.2"
+    alias(libs.plugins.gms)
 }
 
 android {
@@ -40,11 +40,11 @@ android {
 }
 
 dependencies {
-    implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
-    implementation ("com.google.mlkit:translate:17.0.3")
-    implementation ("com.google.firebase:firebase-core:15.0.2")
-    implementation ("com.google.firebase:firebase-ml-natural-language:22.0.0")
-    implementation ("com.google.firebase:firebase-ml-natural-language-translate-model:20.0.8")
+    
+    implementation("com.google.firebase:firebase-ml-natural-language:22.0.0")
+    implementation("com.google.firebase:firebase-core:17.3.0")
+    implementation("com.google.firebase:firebase-ml-natural-language-translate-model:20.0.8")
+    implementation("com.google.firebase:firebase-ml-natural-language-language-id-model:20.0.7")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
